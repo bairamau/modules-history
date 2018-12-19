@@ -1,5 +1,10 @@
-var users = ['Tyler', 'Sarah', 'Dan']
+(function() {
 
-function getUsers() {
-  return users;
-}
+  var users = ['Tyler', 'Sarah', 'Dan']
+
+  function getUsers() {
+    return users;
+  }
+
+  APP.getUsers = getUsers
+})()
