@@ -1,3 +1,4 @@
+import getUsers from './users.js'
 function addUserToDOM(name) {
   const node = document.createElement('li')
   const text = document.createTextNode(name)
@@ -15,7 +16,7 @@ document.getElementById('submit')
   input.value = ""
 })
 
-var users = window.getUsers()
+var users = getUsers()
 for(var i=0; i<users.length;i++) {
   addUserToDOM(users[i])
 }
